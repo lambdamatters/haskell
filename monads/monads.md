@@ -1,4 +1,4 @@
-# Monads in Haskell...
+# Discovering Monads
 
 ## Introduction
 
