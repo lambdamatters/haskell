@@ -8,8 +8,6 @@ But that is just the practical aspect.
 
 On a slightly deeper level, it is useful to think of a monad as _a strategy_ for _combining computations_ into more complex computations._
 
-
-
 ## Maybe
 
 The `Maybe` type constructor allows us to deal with absence of values.
@@ -51,7 +49,7 @@ The format of `Maybe` is as follows:
 
 ``` haskell
 data Maybe a = Just a 
-	         | Nothing
+	     | Nothing
 ```
 
 where, `Just` & `Nothing` are the data/value constructors.
@@ -66,6 +64,11 @@ maternalGrandFather :: Sheep -> Maybe Sheep
 
 paternalGrandMother :: Sheep -> Maybe Sheep
 
+```
+Now, we've run into a problem -- we simply can't say 
+
+``` haskell
+maternalGrandFather sheep = father mother sheep
 ```
 
 ## List 
