@@ -47,14 +47,14 @@ We have to factor in the possibility of a sheep *not* having one of the parents.
 
 This can be done via the `Maybe` type constructor to construct a new type called `Maybe Sheep`
 
-The format of `Maybe` is as follows:
+The definition of `Maybe` is as follows:
 
 ``` haskell
 data Maybe a = Just a 
 	         | Nothing
 ```
 
-where, `Just` & `Nothing` are the data/value constructors.
+where `Just` & `Nothing` are data/value constructors.
 
 ``` haskell
 data Sheep = Sheep {...}
